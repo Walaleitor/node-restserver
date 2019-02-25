@@ -20,7 +20,6 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = process.env.MONGO_URI;
 }
 
-//urlDB = 'mongodb+srv://seba:1q2w3e@cafe-qvfbm.mongodb.net/test?retryWrites=true';
 
 
 process.env.URLDB = urlDB;
