@@ -71,7 +71,7 @@ app.post('/usuario', [verificaToken, verificaAdminRole], (req, res) => {
 
 })
 
-app.put('/usuario/:id', [verificaToken, verificaAdminRole], (req, res) => {
+app.put('/usuario/:id', verificaToken, (req, res) => {
     let id = req.params.id;
     let body = _.pick(req.body, ['nombre', 'email', 'img', 'role', 'estado']);
 
